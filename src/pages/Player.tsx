@@ -1,18 +1,13 @@
 import { ChevronDown, MessageCircle, Video } from "lucide-react";
 import ReactPlayer from "react-player";
+import Header from "../components/Header";
 
 export function Player() {
   return (
     <div className="flex h-screen items-center justify-center bg-zinc-950 text-zinc-50">
       <div className="flex w-[1100px] flex-col gap-6">
         <div className="flex items-center justify-between">
-          <div className="flex flex-col gap-1">
-            <h1 className="text-2xl font-bold">Fundamentos do Redux</h1>
-
-            <span className="text-sm text-zinc-400">
-              Módulo "Desvendando o Redux"
-            </span>
-          </div>
+          <Header />
 
           <button className="flex items-center gap-2 rounded bg-violet-500 px-3 py-2 text-sm font-medium text-white duration-200 hover:bg-violet-600">
             <MessageCircle className="h-4 w-4" />
@@ -32,7 +27,7 @@ export function Player() {
             </div>
           </div>
 
-          <aside className="scrollbar scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-800 absolute bottom-0 right-0 top-0 w-80 divide-y-2 divide-zinc-900 overflow-y-scroll border-l border-zinc-800 bg-zinc-900">
+          <aside className="scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-800 absolute bottom-0 right-0 top-0 w-80 divide-y-2 divide-zinc-900 overflow-y-scroll border-l border-zinc-800 bg-zinc-900">
             <div>
               <button className="flex w-full items-center gap-3 bg-zinc-800 p-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-950 text-xs">
